@@ -1,0 +1,1046 @@
+#header {
+    position: fixed;
+    width: 100%;
+
+    .logo {
+        // position: absolute;
+        // margin-top: 40px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        display: block;
+        // margin-top: 40px;
+    }
+
+    .header-top {
+        height: 8vh;
+
+        i {
+            padding-right: 20px;
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        .button {
+            padding: 5px 13px;
+            border-radius: 20px;
+            border: none;
+            margin-top: 15px;
+            background-color: #FFC311;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: #ffd;
+                padding-left: 5px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                font-size: 11px;
+
+                &.a1 {
+                    border-right: 1px solid #daa812;
+                    padding-right: 5px;
+                }
+
+            }
+        }
+    }
+
+    .header-bottom {
+
+
+
+
+        .menu {
+            width: 100%;
+
+            ul {
+                .home {
+                    // width: 20%;
+                    // height: 100%;
+                    // top: 40px;
+                    // left: 17%;
+                    // margin-right: 20px;
+                    // padding: 30px 0;
+
+                    // opacity: 0;  
+                    // visibility: hidden;
+                    &:hover {
+                        .drop-menu-1 {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: scale(1);
+                            transition: 0.3s ease-in-out;
+                        }
+                    }
+
+                    .drop-menu-1 {
+                        // height: 100%;
+                        width: 15%;
+                        left: 35%;
+                        top: 15%;
+                        opacity: 0;
+                        visibility: hidden;
+                        position: absolute;
+                        background-color: #fff;
+                        // margin-top: 30px;
+                        transform: scale(0);
+
+                        ul {
+                            li {
+                                border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+                                a {
+                                    display: block;
+                                    text-decoration: none;
+                                    color: rgb(36, 35, 35);
+                                    padding-top: 20px;
+                                    transition: 0.3s ease-in-out;
+                                    font-size: 15px;
+                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                    font-weight: 400;
+
+
+                                    &.first-a {
+                                        color: #FBC31B;
+                                    }
+
+                                    &:hover {
+                                        color: #FBC31B;
+                                        transition: 0.3s ease-in-out;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .About {
+                    &:hover {
+                        .drop-menu-2 {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+
+                    }
+
+                    .drop-menu-2 {
+                        width: 15%;
+                        left: 42%;
+                        background-color: #fff;
+                        position: absolute;
+                        opacity: 0;
+                        visibility: hidden;
+                        top: 15%;
+
+
+
+
+                        ul {
+                            li {
+                                padding-top: 10px;
+                                border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+
+                                a {
+                                    display: block;
+                                    color: black;
+                                    padding: 15px 0;
+                                    transition: 0.3s ease-in-out;
+                                    font-size: 15px;
+                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                    font-weight: 400;
+                                }
+
+
+                                &:hover {
+                                    color: #FBC31B;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            .blog {
+                &:hover {
+                    .drop-menu-3 {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                }
+
+                .drop-menu-3 {
+                    background-color: #fff;
+                    left: 49%;
+                    width: 15%;
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    top: 15%;
+
+
+                    .blog-style {
+                        &:hover {
+                            .litledrop-menu1 {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+
+                        .litledrop-menu1 {
+                            position: absolute;
+                            width: 100%;
+                            left: 90%;
+                            top: 0;
+                            background-color: #fff;
+                            opacity: 0;
+                            visibility: hidden;
+
+                            ul {
+                                li {
+                                    border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+
+                                    a {
+                                        padding: 10px 0;
+                                        color: black;
+                                        font-size: 15px;
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                        font-weight: 400;
+
+                                        &:hover {
+                                            color: gold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .review {
+                        &:hover {
+                            .litledrop-menu2 {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+
+                        }
+
+                        .litledrop-menu2 {
+                            background-color: #fff;
+                            position: absolute;
+                            left: 100%;
+                            width: 100%;
+                            top: 35%;
+                            opacity: 0;
+                            visibility: hidden;
+
+                            ul {
+                                li {
+                                    border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+                                    a {
+                                        padding: 15px 0;
+                                        font-size: 15px;
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .post {
+                        &:hover {
+                            .litledrop-menu3 {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+
+                        .litledrop-menu3 {
+                            position: absolute;
+                            width: 100%;
+                            left: 90%;
+                            top: 60%;
+                            background-color: #fff;
+                            opacity: 0;
+                            visibility: hidden;
+
+                            ul {
+                                li {
+                                    border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+                                    a {
+                                        padding: 10px 0;
+                                        color: black;
+                                        font-size: 15px;
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                        font-weight: 400;
+
+                                        &:hover {
+                                            color: gold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    Li {
+                        border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+
+                        a {
+                            padding: 15px 0;
+                            transition: 0.2s ease-in-out;
+                            color: black;
+                            font-size: 15px;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight: 400;
+
+                            &:hover {
+                                color: gold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .games {
+                &:hover {
+                    .drop-menu4 {
+                        opacity: 1;
+                        visibility: visible;
+
+                    }
+                }
+
+                .game-list {
+                    &:hover {
+                        .litle-menu1 {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .litle-menu1 {
+                        position: absolute;
+                        width: 100%;
+                        left: 90%;
+                        top: 0;
+                        background-color: #fff;
+                        opacity: 0;
+                        visibility: hidden;
+
+                        ul {
+                            li {
+                                border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+
+                                a {
+                                    padding: 10px 0;
+                                    color: black;
+
+                                    &:hover {
+                                        color: gold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .game-datail {
+                    &:hover {
+                        .litle-menu2 {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .litle-menu2 {
+                        position: absolute;
+                        width: 100%;
+                        left: 100%;
+                        top: 40%;
+                        background-color: #fff;
+                        opacity: 0;
+                        visibility: hidden;
+
+                        ul {
+                            li {
+                                border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+
+                                a {
+                                    padding: 10px 0;
+                                    color: black;
+
+                                    &:hover {
+                                        color: gold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .catagorize {
+                    &:hover {
+                        .litle-menu3 {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .litle-menu3 {
+                        position: absolute;
+                        width: 100%;
+                        left: 100%;
+                        top: 50%;
+                        background-color: #fff;
+                        opacity: 0;
+                        visibility: hidden;
+
+                        ul {
+                            li {
+                                border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+
+                                a {
+                                    padding: 10px 0;
+                                    color: black;
+
+                                    &:hover {
+                                        color: gold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+
+
+
+
+                .drop-menu4 {
+                    width: 15%;
+                    position: absolute;
+                    left: 55%;
+                    background-color: #fff;
+                    opacity: 0;
+                    visibility: hidden;
+                    top: 15%;
+
+
+                    ul {
+                        li {
+                            border-bottom: 0.5px solid rgba(0, 0, 0, 0.068);
+
+                            a {
+                                padding: 15px 0;
+                                color: black;
+                                font-size: 15px;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                font-weight: 400;
+
+                                &:hover {
+                                    color: gold;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pages {
+                &:hover {
+                    .drop-menu5 {
+                        opacity: 1;
+                        visibility: visible;
+                        transition: 0.5s ease-in-out;
+                        transform: scale(1);
+                    }
+
+                }
+
+                .drop-menu5 {
+                    width: 15%;
+                    left: 77%;
+                    background-color: #fff;
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    top: 15%;
+
+
+
+
+                    ul {
+                        li {
+                            padding-top: 10px;
+                            border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+
+                            a {
+                                display: block;
+                                color: black;
+                                padding: 15px 0;
+                                transition: 0.3s ease-in-out;
+                                font-size: 15px;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                font-weight: 400;
+
+                                &:hover {
+                                    color: #FBC31B;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            .contact {
+                &:hover {
+                    .drop-menu6 {
+                        opacity: 1;
+                        visibility: visible;
+                        transition: 0.5s ease-in-out;
+                        transform: scale(1);
+                    }
+
+                }
+
+                .drop-menu6 {
+                    width: 15%;
+                    left: 85%;
+                    background-color: #fff;
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    top: 15%;
+
+
+
+
+                    ul {
+                        li {
+                            padding-top: 10px;
+                            border-bottom: 0.5px solid rgba(0, 0, 0, 0.041);
+
+
+                            a {
+                                display: block;
+                                color: black;
+                                padding: 15px 0;
+                                transition: 0.3s ease-in-out;
+                                font-size: 15px;
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                font-weight: 400;
+
+                                &:hover {
+                                    color: #FBC31B;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+
+
+
+        li {
+            padding-left: 35px;
+
+
+            &.home {
+                a {
+                    color: gold;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                color: #fff;
+                transition: 0.1s ease-in-out;
+                font-size: 14px;
+                font-weight: bold;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                &:hover {
+                    color: gold;
+                }
+
+                i {
+                    color: #fff;
+                    transition: 0.1s ease-in-out;
+
+
+                    &:hover {
+                        color: gold;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
+
+
+
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/nfs-slider.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .color-box {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.199);
+        // position: relative;
+    }
+
+    .section1-icon {
+        position: absolute;
+        text-align: center;
+        top: 25%;
+        left: 45%;
+        transform: translate(-25%, -45%);
+
+        i {
+            display: inline-block;
+            color: gold;
+            padding-left: 10px;
+
+        }
+
+        span {
+            padding: 10px;
+            font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            color: #fff;
+
+        }
+
+
+
+    }
+
+    .section1-text {
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        transform: translate(-40%, 20%);
+        text-align: center;
+        // line-height: 30px;
+        color: #fff;
+
+        h1 {
+            font-weight: bolder;
+            font-size: 65px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        p {
+            font-weight: 400;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 13;
+            padding: 25px 0;
+        }
+
+        a {
+            font-size: 15px;
+            color: #fff;
+            display: inline-block;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            padding: 15px 25px;
+            text-align: center;
+            transition: 0.3s ease-in-out;
+
+            // margin-bottom: 20px;
+            &:hover {
+
+                color: gold;
+
+
+            }
+
+            hr {
+                width: 150px;
+                margin-right: 15px;
+                margin-top: 15px;
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+}
+
+
+.section2 {
+    height: 100vh;
+    padding: 10% 0;
+    width: 100%;
+    background-color: #fff;
+
+
+    .boxes {
+        background-image: url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-3-bg.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+
+
+
+        .text-box {
+            color: #fff;
+
+            p {
+                color: #FFC320;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 15px 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #FFC320;
+                margin: 25px 0;
+                display: block;
+                font-size: 20px;
+                font-weight: bold;
+
+                hr {
+                    width: 150px;
+                    margin: 20px 0;
+
+                    // margin-left: 50px;
+                }
+
+            }
+
+        }
+
+
+
+
+
+
+    }
+
+    .boxes2 {
+
+
+        background-image: url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-2-bg.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+
+        .text-box2 {
+            color: #fff;
+
+            p {
+                color: #FFC320;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 15px 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #FFC320;
+                margin: 25px 0;
+                display: block;
+                font-size: 20px;
+                font-weight: bold;
+
+                hr {
+                    width: 150px;
+                    margin: 20px 0;
+
+                    // margin-left: 50px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .boxes3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        background-image: url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/box-1-bg.jpg);
+        background-repeat: no-repeat;
+
+        .text-box3 {
+            color: #fff;
+
+            p {
+                color: #FFC320;
+                font-weight: bold;
+            }
+
+            h1 {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 15px 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #FFC320;
+                margin: 25px 0;
+                display: block;
+                font-size: 20px;
+                font-weight: bold;
+
+                hr {
+                    width: 150px;
+                    margin: 20px 0;
+
+                    // margin-left: 50px;
+                }
+
+            }
+
+        }
+    }
+
+
+
+
+
+    .button-box {
+
+
+        .buttons {
+
+            text-align: center;
+            margin: 1.5rem;
+
+            a {
+
+
+                text-decoration: none;
+                padding: 15px 25px;
+                background-color: #fff;
+                color: goldenrod;
+
+                margin-left: 1rem;
+                transition: .4s ease-in;
+                cursor: pointer;
+
+                &:hover {
+
+                    background-color: goldenrod;
+                    color: #fff;
+
+
+
+
+                }
+            }
+        }
+    }
+
+    .button-box {
+        .buttons {
+            a {
+                color: goldenrod;
+            }
+        }
+    }
+
+
+
+
+}
+
+.section3 {
+
+    .in-text {
+        line-height: 25px;
+
+        span {
+            cursor: pointer;
+
+            .span1 {
+                color: goldenrod;
+
+            }
+
+            &:hover {
+                color: goldenrod;
+            }
+        }
+
+        i {
+            color: goldenrod;
+        }
+
+        h1 {
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            &:hover {
+                color: goldenrod;
+            }
+        }
+
+        p {
+            width: 280px;
+            font-size: 15px;
+            color: #AC9E98;
+
+
+        }
+    }
+
+    .all-games {
+        margin-top: 45px;
+        width: 100%;
+        // display: flex;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            margin: 15px 25px;
+            background-color: #fff;
+            border: 1px solid goldenrod;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: goldenrod;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                background-color: gold;
+                color: #fff;
+            }
+
+        }
+
+    }
+}
+
+.section4 {
+    width: 100%;
+    height: 25vh;
+    background-image: url(https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2018/01/block-bg-1920x209.jpg);
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .sect-box{
+        background-color: rgba(218, 165, 32, 0.623);
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .icon {
+        i {
+            display: flex;
+            justify-content: end;
+            margin: 15px 15px;
+            font-size: 20px;
+        }
+    }
+
+    #header {
+        width: 100%;
+        height: 10vh;
+        background-color: #fff;
+
+        .logo {
+            display: block;
+        }
+
+        .header-top {
+            display: none;
+        }
+
+        .header-bottom {
+            display: none;
+
+            .logo {
+                display: block;
+            }
+        }
+    }
+}
